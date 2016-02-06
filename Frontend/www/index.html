@@ -3,7 +3,6 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Pizza</title>
-
     <!-- Bootsrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -12,16 +11,22 @@
     <!-- LESS JavaScript компілятор -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
     <link rel="stylesheet" type="text/css" href="mainstyle.css" />
-    <style>
-        body {
-            background-image: url(http://weblabfon.com/_ld/2/242_wood01.jpg);
-        }
-    </style>
 </head>
 <body>
+<div class="discount-footer">
+    <div class="discount-label">
+        </div>
+    <div class="discount-text">
+        Цього тижня
+        </br>
+        на все
+        </br>
+        -20%
+        </div>
+    </div>
 <div class="topbar navbar-fixed-top top-panel">
     <div class="pizzalogo">
-     <strong> PIZZA KMA</strong>
+        <strong>KMA PIZZA</strong>
       </div>
     <div class="line1">
         (044) 222 7 222
@@ -35,8 +40,7 @@
 <div class="row text-center mainTitle">
     <div class="allPizzas text-centre">Усі піци</div>
     <span class="allPizzasNumber">9</span>
-</div>
-<div class="row text-center mainmenu">
+</div><div class="row text-center mainmenu">
     <button type="button" class="btn btn-warning">Усі</button>
     <button type="button" class="btn btn-link pizzaType">М'ясні</button>
     <button type="button" class="btn btn-link pizzaType">З ананасами</button>
@@ -46,9 +50,8 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-8 col-sm-6 left-panel">
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
+        <div class="left-panel">
+        <div class="col-md-6 col-lg-4 pizza_card">
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_1.jpg">
 
@@ -86,7 +89,7 @@
             </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
+            <div class="col-md-6 col-lg-4 pizza_card">
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_2.jpg">
 
@@ -124,7 +127,7 @@
             </div>
         </div>
 
-        <div class="col-sm-6 col-md-4">
+            <div class="col-md-6 col-lg-4 pizza_card">
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_3.jpg">
 
@@ -161,7 +164,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+            <div class="col-md-6 col-lg-4 pizza_card">
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_4.jpg">
 
@@ -197,7 +200,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+            <div class="col-md-6 col-lg-4 pizza_card">
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_5.jpg">
 
@@ -233,7 +236,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+            <div class="col-md-6 col-lg-4 pizza_card">
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_6.jpg">
 
@@ -269,7 +272,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+            <div class="col-md-6 col-lg-4 pizza_card">
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_7.jpg">
 
@@ -306,7 +309,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+            <div class="col-md-6 col-lg-4 pizza_card">
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_8.jpg">
 
@@ -343,7 +346,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-4">
+            <div class="col-md-6 col-lg-4 pizza_card">
             <div class="thumbnail pizza-card">
                 <img src="assets/images/pizza_9.jpg">
 
@@ -381,9 +384,9 @@
             </div>
         </div>
         </div>
-    </div> <!--block with pizza-->
-        <div class="col-md-4 col-sm-6 right-panel">   <!--right panel-->
-            <div class="rightpanel">
+     <!--block with pizza-->
+        <div class="right-panel">   <!--right panel-->
+
                 <div class="numdersofpizza">
                   <span class="panel1"><strong>Замовлення</strong>
                     <input type="text" value="1" class="counter1"/>
@@ -391,41 +394,45 @@
 
                 </div>
                 <hr>
-                <div class="pizza1">
+                <div class="add_pizza">
                     <div class="nazva">Hawaiian <span class="label label-info "><span>&Oslash;</span>30 </span></div>
                     <img src="assets/images/pizza_1.jpg" width="100px" height="100px" />
                     <button class = "button_minus" type = "button"> <span class="glyphicon glyphicon-minus"></span> </button>
                     <input type="text" value="1"class="counter2"/>
                     <button class = "button_plus" type = "button"> <span class="glyphicon glyphicon-plus"></span> </button>
                     <button class = "button_remove" type = "button" > <span class="glyphicon glyphicon-remove"></span> </button>
+                    <span class="price">99 грн.</span>
                 </div>
                 <hr>
-                <div class="pizza2">
+                <div class="add_pizza">
                     <div class="nazva">Italiano <span class="label label-info "><span>&Oslash;</span>45</span></div>
                     <img src="assets/images/pizza_6.jpg" width="100px" height="100px" />
                     <button class = "button_minus" type = "button"> <span class="glyphicon glyphicon-minus"></span> </button>
                     <input type="text" value="1" class="counter2"/>
                     <button class = "button_plus" type = "button"> <span class="glyphicon glyphicon-plus"></span> </button>
                     <button class = "button_remove" type = "button" > <span class="glyphicon glyphicon-remove"></span> </button>
-                </div>
-                <hr>
-                <div class="pizza3 ">
-                    <div class="nazva">Milan <span class="label label-info "><span>&Oslash;</span>30 </span></div>
-                    <img src="assets/images/pizza_8.jpg" width="100px" height="100px" />
-                    <button class = "button_minus" type = "button"> <span class="glyphicon glyphicon-minus"></span> </button>
-                    <input type="text" value="1" class="counter2"/>
-                    <button class = "button_plus" type = "button"> <span class="glyphicon glyphicon-plus"></span> </button>
-                    <button class = "button_remove" type = "button" > <span class="glyphicon glyphicon-remove"></span> </button>
+                    <span class="price">99 грн.</span>
                 </div>
                 <hr>
                 <div class="sum">
-                    <span class="Zamovlenna"><strong>До сплати</strong></span> <span class="money"><strong>1500 грн.</strong></span>
-                    <div class="buy1"><button type="button" class="btnrightpanel btn btn-warning btn-block"><strong>Замовити</strong></button></div>
+                    <span class="Zamovlenna"><strong>До сплати</strong></span>
+                    <span class="money"><strong>1500 грн.</strong></span>
+                    <div class="buy1">
+                        <button type="button" class="btnrightpanel btn btn-warning btn-block"><strong>Замовити</strong></button>
+                    </div>
                 </div>
             </div>
         </div>
-</div>
-</div>
+        </div>
+<footer class="footer">
+    <p class="footer_p">
+        Pizza.22 - практичний проект в межах курсу JavaScript в Києво-Могилянській Академії
+    </p>
+    <p>
+    Доставка піци не здійснюється
+    </p>
+    </footer>
+
 <!-- jQuery JavaScript -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
 

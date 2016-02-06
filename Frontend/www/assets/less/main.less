@@ -1,5 +1,8 @@
 @mainColor: #ffbf60;
 @import "pizza/pizza-card";
+body{
+  background-image: url(http://weblabfon.com/_ld/2/242_wood01.jpg);
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10,9 +13,11 @@
   height: 65px;
   overflow:hidden;
 }
-.rightpanel {
-  background-color: white;
-  border-radius:1%;
+.left-panel{
+  margin: auto;
+  max-width: 1350px;
+  padding-left: 20px;
+  padding-right: 350px;
 }
 .topbar{
   background-color: rgba(23, 29, 28, 0.8);
@@ -26,8 +31,8 @@
 }
 .pizzalogo{
   position: fixed;
-  left: 10px;
-  top: 0px;
+  margin-left: 10px;
+  margin-top: 0px;
   background: rgba(252, 148, 46, 0.99);
   border-left: 1px solid #d16200;
   border-right: 1px solid #d16200;
@@ -64,24 +69,21 @@
   left:120px;
 }
 .right-panel{
-  min-width:300px;
-  width:35%;
+  background-color: white;
+  min-width:330px;
+  width:330px;
+  height: 100%;
+  padding-right: 0!important;
+  padding-left: 0!important;
+  padding-top: 35px;
+  margin-left: 20px;
   z-index: 1000;
   position: fixed!important; top:0; right:0; bottom: 0;
+  flex-direction: column;
+
 
 }
 
-.button_minus{
-  width: 33px;
-  height: 33px;
-  border-radius: 100%;
-  text-align:center;
-  border:10px;
-  background-color: rgba(255, 121, 125, 0.5);
-  color:white;
-  position:relative;
-  left:30%;
-}
 .button_plus{
   width: 33px;
   height: 33px;
@@ -90,8 +92,20 @@
   border:10px;
   background-color:#10a736;
   color:white;
-  position:relative;
-  right:10%;
+  position:fixed;
+  margin-top: 30px;
+  margin-left: 75px;
+}
+.button_minus{
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+  text-align:center;
+  border:10px;
+  background-color: rgba(255, 121, 125, 0.5);
+  color:white;
+  position:fixed;
+  margin-top: 30px;
 
 }
 .button_remove{
@@ -101,9 +115,9 @@
   color: white;
   background-color:#ff4143;
   border:none;
-  position:relative;
-  left:120px;
-
+  position:fixed;
+  margin-top: 30px;
+margin-left:170px;
 }
 
 .counter1{
@@ -124,13 +138,20 @@
   text-align: center;
   background-color: orange;
   padding:2px;
-  border-radius: 100%;
+  border-radius: 20%;
   border: none;
   color:white;
   margin:4px;
   font-size: 90%;
-  position:relative;
-  left:10%;
+  position:absolute;
+  margin-top: 30px;
+  margin-left: 39px;
+}
+.price{
+  position: absolute;
+  margin-left: 110px;
+  margin-top: 30px;
+  font-size: 19px;
 }
 .butleft{
   background: rgba(252, 148, 46, 0.99);
@@ -139,52 +160,53 @@
   background: rgba(252, 148, 46, 0.99);
 }
 .panel1{
-  position:relative;
-  left:5%;
-  top:50%;
+  line-height: 17px;
+  padding-left: 15px;
   font-size: 25px;
   font-family: "Century Gothic";
 }
-
+.pizza_card{
+  position: relative;
+  padding-top: 25px;
+}
 .numdersofpizza{
   height:60px ;
   margin:8px;
 }
-.pizza1{
-  height:150px ;
-  margin:8px;
+.img_pizza{
+ position: absolute;
 }
-.pizza2{
+.add_pizza{
   height:150px ;
   margin:8px;
-}
-.pizza3{
-  height:150px ;
-  margin:8px;
+  position: relative;
+  overflow: hidden;
 }
 .nazva{
   color:orange;
   font-size: 27px;
   display: block;
+  padding-left:5px;
 }
 .sum{
-  display: block;
   height:150px ;
   margin:8px;
 }
 
 .Zamovlenna{
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Century Gothic";
+  margin-bottom: 15px;
+
 }
 .money{
-  margin-left: 70px;
-  font-size: 30px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 28px;
   font-family: "Century Gothic";
 }
 .btnrightpanel{
   position:relative;
-  top:50px;
   top:50px;
   font-size: 26px;
   width: 100%;
@@ -199,7 +221,6 @@
   display: inline-block;
   margin: auto;
   color:white;
-
 }
 .allPizzasNumber {
   color: white;
@@ -220,4 +241,50 @@
 }
 .mainmenu{
   margin-right: 400px;
+}
+.clear-order-wrap{
+  padding-right: 15px;
+  font-size: 10px;
+  line-height: 11px;
+  font-weight: 400;
+  color: rgba(0,0,0,.5);
+}
+.footer{
+  background-color:oldlace;
+  text-align: center;
+  height: 100px;
+}
+.footer_p{
+  margin-right: 100px;
+}
+.discount-footer{
+  position: fixed;
+  bottom: 0;
+  background: #ea862e;
+  z-index: 99;
+  width: 100px;
+  padding: 10px;
+  color: #fff;
+  margin-left: 20px;
+}
+.discount-label{
+  width: 100px;
+  height: 11px;
+  top: -11px;
+  left: -1px;
+  background-image: url(../images/discount.svg);
+  background-size: 100px 11px;
+  background-repeat: no-repeat;
+  padding: 0!important;
+  margin-left: 1px;
+  position: absolute;
+}
+.discount-text{
+  font-family:Calibri;
+  font-weight: 700;
+  font-size: 16px;
+  border-bottom: 2px dotted #d16301;
+  margin-bottom: 7px;
+  padding-bottom: 3px;
+  text-align: center;
 }
