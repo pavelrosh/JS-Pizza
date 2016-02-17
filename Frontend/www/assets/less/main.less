@@ -24,15 +24,14 @@ body{
   position: fixed!important; top:0; left:0; bottom: 0;
   height: 10%;
   width:100%;
-  display: table-header-group;
   font-size: 25px;
   color:white;
   z-index:10;
+  padding-left: 15px;
+  padding-right: 500px;
 }
 .pizzalogo{
   position: fixed;
-  margin-left: 10px;
-  margin-top: 0px;
   background: rgba(252, 148, 46, 0.99);
   border-left: 1px solid #d16200;
   border-right: 1px solid #d16200;
@@ -46,27 +45,39 @@ body{
   text-align: center;
 }
 .line1{
-  position: relative;
-  display: inline-block;
-  left:10%;
-  width: 50%;
-  border-bottom : 1px solid white;
-  font-family: "Century Gothic";
-  font-size: 19px;
-}
-.text1{
-  position: relative;
-  left:8%;
-  display: inline-block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 11px;
+ margin-left: 110px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid;
+  color: #a1a1a1;
 }
 
-.line2{
-  position: relative;
-  left:10%;
+.items_firstline{
+  display:block!important;
+}
+.phone_number{
+  font-family: "Century Gothic";
+  font-size: 18px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+}
+.work_days{
+  font-size: 15px;
+  padding-right: 30px;
+  font-family: "Century Gothic";
 }
 .toppanel_btn{
-  position: relative;
-  left:120px;
+  position:relative;
+
+}
+.site-link {
+  display: block !important;
+  padding-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 .right-panel{
   background-color: white;
@@ -80,7 +91,6 @@ body{
   z-index: 1000;
   position: fixed!important; top:0; right:0; bottom: 0;
   flex-direction: column;
-
 
 }
 
@@ -212,7 +222,10 @@ margin-left:170px;
   width: 100%;
 }
 
-.buy{
+.buysmall{
+  margin-left: 25px;
+}
+.buybig{
   margin-left: 25px;
 }
 
