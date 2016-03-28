@@ -1,12 +1,132 @@
 .pizza-card {
-  img {
-    max-width: 200px;
+  border: 2px solid lighten(@mainColor, 30%);
+  padding: 2%;
+  height: 500px;
+  margin: 2%;
+
+  .pizza {
+    width: 215px;
+    height: 200px;
+  }
+
+  .label-new {
+    display: inline;
+    padding: 3%;
+    font-size: 90%;
+    vertical-align: baseline;
+    -webkit-margin-before: -3px;
+    position: absolute;
+    border-radius: 10px;
+    right: 0;
+    top: 0;
+    background-color: @auxColor;
+  }
+
+  .label-popular {
+    background-color: #ffcb00;
   }
 
   h3 {
-    color: @mainColor;
-    background-color: lighten(@mainColor, 45%);
+    color: #ffa704;
+    text-align: center;
+    font-family: "Century Gothic";
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0px;
   }
-  display:block;
 
+  h5 {
+    text-align: center;
+  }
+
+  p {
+    font-family: "Segoe UI Symbol";
+    margin:1%;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .pannel {
+    display: block;
+  }
+
+  .choose1 {
+    text-align: center;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    font-family: "Segoe UI Symbol";
+  }
+
+  .choose2 {
+    text-align: center;
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    font-family: "Segoe UI Symbol";
+  }
+
+  .choose3 {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  .price {
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 25px;
+    font-family: "Century Gothic";
+    color: black;
+  }
+
+  .uah {
+    font-size: 15px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    color:black;
+  }
+
+  .btn {
+    margin: 5px;
+    width: 100px;
+    border-radius: 8%;
+    font-family: "Century Gothic";
+    font-weight: bold;
+
+  }
+
+  @media (max-width: 1260px)and(min-width: 1000px) {
+    .price {
+      font-size: 15px;
+    }
+
+    .uah {
+      font-size: 10px;
+    }
+
+    .btn {
+      width: 70px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .pizza {
+      width: 140px;
+    }
+  }
+}
+
+@media (max-width: 1260px)and(min-width: 800px) {
+  .pizza-card {
+    height: 435px;
+  }
+}
+
+@media (max-width: 1200px)and(min-width: 1000px) {
+  .pizza-card {
+    height: 410px;
+  }
 }

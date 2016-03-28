@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Order</title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less"/>
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+</head>
+<body>
+
+<div class="main-container container-fluid">
+    <div class="row">
+
+        <div class="col-md-9 col-sm-6 left-pannel">
+
+            <div class="personal-data">
+                <div class="data-header">1. Контактні дані</div>
+                <span class="forms-pan col-md-7 col-sm-6">
+
+                    <form class="form-horizontal" id="form-to-fill-in" role="form" method="post">
+
+                        <div class="form-group has-feedback fname">
+                            <div class="status">
+                                <div class="row">
+                                    <label class="control-label col-sm-2">Ім'я:</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="forename"
+                                               placeholder="Введіть ім'я" aria-describedby="helpBlock2">
+                                        <span id="helpBlock2"
+                                              class="help-block">Введіть тільки власне ім’я, без цифр</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-feedback num">
+                            <div class="status">
+                                <div class="row">
+                                    <label class="control-label col-sm-2">Номер:</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="number"
+                                               placeholder="Введіть номер" aria-describedby="helpBlock2">
+                                        <span id="helpBlock3" class="help-block">Введіть номер телефону у форматі +380...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-feedback ad">
+                            <div class="status">
+                                <div class="row">
+                                    <label class=" control-label col-sm-2">Адреса:</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control " id="address"
+                                               placeholder="Введіть адресу" aria-describedby="helpBlock2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                     </span>
+                <span class="order-info-pan col-md-5 col-sm-6"><h4>Інформація про замовлення</h4>
+<h5>Приблизний час замовлення:
+    <span id="time">невідомий</span>
+</h5>
+<h5>Адреса замовлення:
+    <span id="order-address">невідома</span>
+</h5>
+                </span>
+                <button type="button" class="btn btn-warning next">Далі<span
+                        class="glyphicon glyphicon-chevron-right"></span></button>
+
+            </div>
+
+            <div id="googleMap"></div>
+            <div id="liqpay"></div>
+
+        </div>
+        <div class="col-md-3  col-sm-6 right-pannel">
+            <span id="header-title-2">Замовлення</span><span class="badge badge-rp">0</span>
+            <button type="button" class="btn btn-link reset">Очистити замовлення</button>
+
+            <div class="ordered-display">
+
+                <div id="motivation">Зголодніли?<br>
+                    Замовте КМАПІЦУ!
+                </div>
+
+                <div id="cart">
+                </div>
+            </div>
+
+            <div class="pan-footer">
+                <span id="sum">Сума замовлення</span>
+                <span class="total-price"></span>
+                <button type="button" class="btn btn-success order">Замовити</button>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCdm7I_lfOWmpDHZ7zRUr6GLNWfgBGeiJU"></script>
+<script src="//static.liqpay.com/libjs/checkout.js"></script>
+
+<!-- jQuery JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!--Bootsrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCdm7I_lfOWmpDHZ7zRUr6GLNWfgBGeiJU"></script>
+<!--Own JavaScript -->
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
